@@ -5,8 +5,7 @@ Version:	4.0_2.218
 Release:	1
 License:	GPL
 Group:		Libraries
-#Source0:	ftp://ftp.starlink.rl.ac.uk/pub/ussc/store/cnf/cnf.tar.Z
-Source0:	cnf.tar.Z
+Source0:	ftp://ftp.starlink.rl.ac.uk/pub/ussc/store/cnf/cnf.tar.Z
 # Source0-md5:	193897823c84e043a85b0f0c24b51e82
 URL:		http://www.starlink.rl.ac.uk/static_www/soft_further_CNF.html
 BuildRequires:	sed >= 4.0
