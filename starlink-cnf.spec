@@ -28,7 +28,7 @@ Pakiet CNF ³±czy dwa zbiory oprogramowania u³atwiaj±cego zadanie
 pisania przeno¶nych programów z mieszanym kodem w Fortranie i C. F77
 to zbiór makr C do obs³ugi linkowania funkcji Fortran/C w sposób
 przeno¶ny, a CNF to zbiór funkcji do obs³ugi ró¿nic miêdzy Fortranem i
-C w tranktowaniu ³añcuchów znaków, warto¶ci logicznych i wska¼ników do
+C w traktowaniu ³añcuchów znaków, warto¶ci logicznych i wska¼ników do
 dynamicznie przydzielanej pamiêci.
 
 %package devel
