@@ -2,7 +2,7 @@ Summary:	CNF - C aNd Fortran mixed programming
 Summary(pl):	CNF - mieszanie kodu w C i Fortranie
 Name:		starlink-cnf
 Version:	4.0_2.218
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries
 Source0:	ftp://ftp.starlink.rl.ac.uk/pub/ussc/store/cnf/cnf.tar.Z
@@ -35,7 +35,7 @@ dynamicznie przydzielanej pamiêci.
 Summary:	Header files for CNF library
 Summary(pl):	Pliki nag³ówkowe biblioteki CNF
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for CNF library.
@@ -47,7 +47,7 @@ Pliki nag³ówkowe biblioteki CNF.
 Summary:	Static Starlink CNF library
 Summary(pl):	Statyczna biblioteka Starlink CNF
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static Starlink CNF library.
@@ -58,10 +58,10 @@ Statyczna biblioteka Starlink CNF.
 %prep
 %setup -q -c
 
-sed -i -e "s/ -O'/ %{rpmcflags} -fPIC'/;s/ ld -shared -soname / %{__cc} -shared -Wl,-soname=/" mk
+sed -i -e "s@ -O'@ %{rpmcflags} -fPIC'@;s@ ld -shared -soname @ %{__cc} -shared -Wl,-soname=@" mk
 
 %build
-%ifarch alpha
+%ifarch alpha amd64
 # get version with 64-bit pointer type before mk unpacks 32-bit one
 tar xf cnf_source.tar cnf_par_alpha_OSF1
 mv -f cnf_par_alpha_OSF1 cnf_par
