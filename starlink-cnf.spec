@@ -8,6 +8,7 @@ Group:		Libraries
 Source0:	ftp://ftp.starlink.rl.ac.uk/pub/ussc/store/cnf/cnf.tar.Z
 # Source0-md5:	193897823c84e043a85b0f0c24b51e82
 URL:		http://www.starlink.rl.ac.uk/static_www/soft_further_CNF.html
+BuildRequires:	rpmbuild(macros) >= 1.213
 BuildRequires:	sed >= 4.0
 BuildRequires:	starlink-htx
 Requires:	starlink-htx
@@ -61,7 +62,7 @@ Statyczna biblioteka Starlink CNF.
 sed -i -e "s@ -O'@ %{rpmcflags} -fPIC'@;s@ ld -shared -soname @ %{__cc} -shared -Wl,-soname=@" mk
 
 %build
-%ifarch alpha amd64
+%ifarch %{x8664} alpha ia64 ppc64 s390x sparc64
 # get version with 64-bit pointer type before mk unpacks 32-bit one
 tar xf cnf_source.tar cnf_par_alpha_OSF1
 mv -f cnf_par_alpha_OSF1 cnf_par
