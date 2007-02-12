@@ -1,5 +1,5 @@
 Summary:	CNF - C aNd Fortran mixed programming
-Summary(pl.UTF-8):   CNF - mieszanie kodu w C i Fortranie
+Summary(pl.UTF-8):	CNF - mieszanie kodu w C i Fortranie
 Name:		starlink-cnf
 Version:	4.0_2.218
 Release:	2
@@ -34,7 +34,7 @@ dynamicznie przydzielanej pamięci.
 
 %package devel
 Summary:	Header files for CNF library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki CNF
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki CNF
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -46,7 +46,7 @@ Pliki nagłówkowe biblioteki CNF.
 
 %package static
 Summary:	Static Starlink CNF library
-Summary(pl.UTF-8):   Statyczna biblioteka Starlink CNF
+Summary(pl.UTF-8):	Statyczna biblioteka Starlink CNF
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
