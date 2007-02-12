@@ -1,5 +1,5 @@
 Summary:	CNF - C aNd Fortran mixed programming
-Summary(pl):	CNF - mieszanie kodu w C i Fortranie
+Summary(pl.UTF-8):   CNF - mieszanie kodu w C i Fortranie
 Name:		starlink-cnf
 Version:	4.0_2.218
 Release:	2
@@ -24,36 +24,36 @@ portable way, and CNF is a set of functions to handle the difference
 between FORTRAN and C character strings, logical values and pointers
 to dynamically allocated memory.
 
-%description -l pl
-Pakiet CNF 潮czy dwa zbiory oprogramowania u砤twiaj眂ego zadanie
-pisania przeno秐ych program體 z mieszanym kodem w Fortranie i C. F77
-to zbi髍 makr C do obs硊gi linkowania funkcji Fortran/C w spos骲
-przeno秐y, a CNF to zbi髍 funkcji do obs硊gi r罂nic mi阣zy Fortranem i
-C w traktowaniu 砤馽uch體 znak體, warto禼i logicznych i wska糿ik體 do
-dynamicznie przydzielanej pami阠i.
+%description -l pl.UTF-8
+Pakiet CNF 艂膮czy dwa zbiory oprogramowania u艂atwiaj膮cego zadanie
+pisania przeno艣nych program贸w z mieszanym kodem w Fortranie i C. F77
+to zbi贸r makr C do obs艂ugi linkowania funkcji Fortran/C w spos贸b
+przeno艣ny, a CNF to zbi贸r funkcji do obs艂ugi r贸偶nic mi臋dzy Fortranem i
+C w traktowaniu 艂a艅cuch贸w znak贸w, warto艣ci logicznych i wska藕nik贸w do
+dynamicznie przydzielanej pami臋ci.
 
 %package devel
 Summary:	Header files for CNF library
-Summary(pl):	Pliki nag丑wkowe biblioteki CNF
+Summary(pl.UTF-8):   Pliki nag艂贸wkowe biblioteki CNF
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for CNF library.
 
-%description devel -l pl
-Pliki nag丑wkowe biblioteki CNF.
+%description devel -l pl.UTF-8
+Pliki nag艂贸wkowe biblioteki CNF.
 
 %package static
 Summary:	Static Starlink CNF library
-Summary(pl):	Statyczna biblioteka Starlink CNF
+Summary(pl.UTF-8):   Statyczna biblioteka Starlink CNF
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static Starlink CNF library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka Starlink CNF.
 
 %prep
